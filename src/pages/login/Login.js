@@ -1,9 +1,20 @@
+import styled from "styled-components";
+import { FrameView } from "../Main";
 function Login() {
   return (
-    <div>
-      <header>로그인</header>
-    </div>
+    <FrameView>
+      <InputBlock />
+    </FrameView>
   );
 }
 
+const InputBlock = styled.input`
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+`;
+
+const LoginFrameView = styled(FrameView)`
+  margin: 0 auto;
+`;
 export default Login;
